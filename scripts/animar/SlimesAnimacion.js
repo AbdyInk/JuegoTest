@@ -3,29 +3,29 @@ function SlimeAnimate(x)
 {   
     //1
     setTimeout(() => {
-      defaultAnim2(x);
+      setAnim2("default",x);
   }, 100);
   setTimeout(() => {
-      defaultAnim3(x);
+      setAnim3("default",x);
   }, 150);
   setTimeout(() => {
-      defaultAnim2(x);
+      setAnim2("default",x);
   }, 1500);
   setTimeout(() => {
-      defaultAnim1(x);
+      setAnim1("default",x);
 
       //blink
       setTimeout(() => {
-      defaultAnim2(x);
+      setAnim2("default",x);
       }, 200);
       setTimeout(() => {
-      defaultAnim3(x);
+      setAnim3("default",x);
       }, 225);
       setTimeout(() => {
-      defaultAnim2(x);
+      setAnim2("default",x);
       }, 250);
       setTimeout(() => {
-      defaultAnim1(x);
+      setAnim1("default",x);
       }, 275);
   }, 1550);
   
@@ -33,75 +33,155 @@ function SlimeAnimate(x)
   
   //2
   setTimeout(() => {
-      defaultAnim2(x);
+      setAnim2("default",x);
   }, 2950);
   setTimeout(() => {
-      defaultAnim4(x);
+      setAnim4("default",x);
   }, 3000);
   setTimeout(() => {
-      defaultAnim5(x);
+      setAnim5("default",x);
   }, 4600);
   setTimeout(() => {
-      defaultAnim6(x);
+      setAnim6("default",x);
   }, 4700);
   setTimeout(() => {
       //blink
       setTimeout(() => {
-          defaultAnim5(x);
+          setAnim5("default",x);
           }, 200);
           setTimeout(() => {
-          defaultAnim3(x);
+          setAnim3("default",x);
           }, 225);
           setTimeout(() => {
-          defaultAnim2(x);
+          setAnim2("default",x);
           }, 250);
   }, 6200);   
   setTimeout(() => {
-      defaultAnim1(x);
+      setAnim1("default",x);
   }, 6500);
 }
 
 //Caminar
-function SlimeWalk(x)
+function SlimeWalk(gb,x)
 {
-    walkAnim2(x);
+    setAnim2(gb,x);
     setTimeout(() => {
-        walkAnim4(x);
+        setAnim4(gb,x);
     }, 100);
     setTimeout(() => {
-        walkAnim3(x);
+        setAnim3(gb,x);
     }, 200);
     setTimeout(() => {
-        walkAnim5(x);
+        setAnim5(gb,x);
     }, 300);
     setTimeout(() => {
-        walkAnim2(x);
+        setAnim2(gb,x);
     }, 400);
     setTimeout(() => {
-        walkAnim4(x);
+        setAnim4(gb,x);
     }, 500);
     setTimeout(() => {
-        walkAnim3(x);
+        setAnim3(gb,x);
     }, 600);
     setTimeout(() => {
-        walkAnim5(x);
+        setAnim5(gb,x);
     }, 700);
     setTimeout(() => {
-        walkAnim2(x);
-    }, 800);
+        setAnim2(gb,x);
+    }, 700);
     setTimeout(() => {
-        walkAnim4(x);
+        setAnim4(gb,x);
     }, 900);
     setTimeout(() => {
-        walkAnim3(x);
+        setAnim3(gb,x);
     }, 1000);
     setTimeout(() => {
-        walkAnim5(x);
+        setAnim5(gb,x);
     }, 1100);
     setTimeout(() => {
-        walkAnim2(x);
+        setAnim2(gb,x);
     }, 1200);
     setTimeout(() => {
-        walkAnim1(x);
+        setAnim1(gb,x);
     }, 1300);
+}
+
+//Atacar
+function SlimeGreenAttack(x)
+{
+    setTimeout(() => {
+        setAnim2("attack",x);
+    }, 100);
+    setTimeout(() => {
+        setAnim7("attack",x);
+    }, 150);
+    setTimeout(() => {
+        setAnim3("attack",x);
+    }, 200);
+    setTimeout(() => {
+        setAnim4("attack",x);
+    }, 300);
+    setTimeout(() => {
+        setAnim3("attack",x);
+    }, 400);
+    setTimeout(() => {
+        setAnim7("attack",x);
+    }, 500);
+    setTimeout(() => {
+        setAnim3("attack",x);
+    }, 600);
+    setTimeout(() => {
+        setAnim4("attack",x);
+    }, 700);
+    setTimeout(() => {
+        setAnim3("attack",x);
+    }, 800);
+    setTimeout(() => {
+        setAnim7("attack",x);
+    }, 900);
+    setTimeout(() => {
+        setAnim3("attack",x);
+    }, 1000);
+    setTimeout(() => {
+        setAnim4("attack",x);
+    }, 1100);
+    setTimeout(() => {
+        setAnim3("attack",x);
+    }, 1200);
+    setTimeout(() => {
+        setAnim7("attack",x);
+    }, 1300);
+    setTimeout(() => {
+        setAnim3("attack",x);
+    }, 1400);
+    setTimeout(() => {
+        setAnim4("attack",x);
+    }, 1500);
+    setTimeout(() => {
+        setAnim3("attack",x);
+    }, 1600);
+    setTimeout(() => {
+        setAnim5("attack",x);
+    }, 1700);
+    setTimeout(() => {
+        setAnim5("attack",x);
+    }, 1750);
+    setTimeout(() => {
+        setAnim8("attack",x);
+    }, 1800);
+    setTimeout(() => {
+        setAnim6("attack",x);
+    }, 2200);
+    setTimeout(() => {
+        setAnim5("attack",x);
+    }, 2300);
+    setTimeout(() => {
+        setAnim7("attack",x);
+    }, 2400);
+    setTimeout(() => {
+        setAnim2("attack",x);
+    }, 2500);
+    setTimeout(() => {
+        setAnim1("attack",x);
+    }, 2600);
 }

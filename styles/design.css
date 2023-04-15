@@ -134,7 +134,7 @@ body
     background-position: 0 0;
 }
 
-#attack1,#attack2,#attack3,#attack4,#attack5,#attack6,#attack7,#attack8,#attack9,#hurt1,#hurt2,#hurt3,#hurt4,#hurt5,#hurt6,#hurt7,#hurt8,#hurt9,#walk1,#walk2,#walk3,#walk4,#walk5,#walk6,#walk7,#walk8,#walk9
+#attack1,#attack2,#attack3,#attack4,#attack5,#attack6,#attack7,#attack8,#attack9,#hurt1,#hurt2,#hurt3,#hurt4,#hurt5,#hurt6,#hurt7,#hurt8,#hurt9,#walk1,#walk2,#walk3,#walk4,#walk5,#walk6,#walk7,#walk8,#walk9,#walkback1
 {
     display:none;
     height:80px;

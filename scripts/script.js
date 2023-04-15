@@ -20,46 +20,41 @@ $(document).ready(function () {
   switch(qntyEnemies)
   {
     case 1:
-      document.getElementById("Entidad1").style.top="40%";
+      posEnty[1]="40%";
     break;
     case 2:
-      document.getElementById("Entidad1").style.top="30%";
-      document.getElementById("Entidad2").style.top="50%";
+      posEnty[1]="30%";
+      posEnty[2]="50%";
     break;
     case 3:
-      complete1();
+      
     break;
     case 4:
-      complete1();
-      document.getElementById("Entidad4").style.top="40%";
+      posEnty[4]="40%";
     break;
     case 5:
-      complete1();
-      document.getElementById("Entidad4").style.top="30%";
-      document.getElementById("Entidad5").style.top="50%";
+      posEnty[4]="30%";
+      posEnty[5]="50%";
     break;
     case 6:
-      complete1();
-      complete2();
+
     break;
     case 7:
-      complete1();
-      complete2();
-      document.getElementById("Entidad7").style.top="40%";
+      posEnty[7]="40%";
     break;
     case 8:
-      complete1();
-      complete2();
-      document.getElementById("Entidad7").style.top="30%";
-      document.getElementById("Entidad8").style.top="50%";
+      posEnty[7]="30%";
+      posEnty[8]="50%";
     break;
     case 9:
-      complete1();
-      complete2();
-      complete3();
     break;
     default:
       alert("Erroor aaa");
+  }
+
+  for(let pe=1; pe<=9; pe++)
+  {
+    document.getElementById("Entidad"+pe).style.top=posEnty[pe];
   }
   
   //Fin enemigos cantidad y orden

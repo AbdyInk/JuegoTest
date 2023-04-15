@@ -32,6 +32,7 @@ class SlimeGreen extends Enemigo
         document.getElementById("attack"+this.numero).style.backgroundImage="url(images/enemies/SlimeGreen/Attack.png)";
         document.getElementById("hurt"+this.numero).style.backgroundImage="url(images/enemies/SlimeGreen/Hurt.png)";
         document.getElementById("walk"+this.numero).style.backgroundImage="url(images/enemies/SlimeGreen/Walk.png)";
+        document.getElementById("walkback"+this.numero).style.backgroundImage="url(images/enemies/SlimeGreen/WalkBack.png)";
         document.getElementById("Entidad"+this.numero).style.display="flex";
         SlimeAnimate(this.numero);
         setInterval(() => {
@@ -42,19 +43,36 @@ class SlimeGreen extends Enemigo
     {
         document.getElementById("default"+this.numero).style.display="none";
         document.getElementById("walk"+this.numero).style.display="flex";
-        SlimeWalk(this.numero);
+        SlimeWalk("walk",this.numero);
         if(this.numero==1 || this.numero==3)
         {
-            $("#Entidad"+this.numero).animate({top:"40%",right:"50%"},1200);
+            $("#Entidad"+this.numero).animate({top:"41%",right:"50%"},1200);
         }
         setTimeout(() => {
-            SlimeWalk(this.numero);
-            $("#Entidad"+this.numero).animate({right:"75%"},1200);
+            SlimeWalk("walk",this.numero);
+            $("#Entidad"+this.numero).animate({right:"76%"},1200);
+            setTimeout(() => {
+                $("#attack"+this.numero).css("display","flex");
+                $("#walk"+this.numero).css("display","none");
+                SlimeGreenAttack(this.numero);
+            }, 1300);
+            setTimeout(() => {
+                this.atacarTerminado();
+                setTimeout(() => {
+                    $("#walkback"+this.numero).css("display","flex");
+                    $("#attack"+this.numero).css("display","none");
+                    SlimeWalk("walkback",this.numero);
+                    setTimeout(() => {
+                        SlimeWalk("walkback",this.numero);
+                    }, 1300);
+                    $("#Entidad"+this.numero).animate({top:posEnty[this.numero],right:posEntx[this.numero]},2000);
+                    setTimeout(() => {
+                        $("#default"+this.numero).css("display","flex");
+                        $("#walkback"+this.numero).css("display","none");
+                    }, 2100);
+                }, 200);
+            }, 3300);
         }, 1300);
-
-        setTimeout(() => {
-            this.atacarTerminado();
-        }, 2500);
     }
 }
 

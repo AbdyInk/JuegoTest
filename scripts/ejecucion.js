@@ -9,8 +9,7 @@ setTimeout(() => {
         }
   
         setTimeout(() => {
-            Entidad[1].atacar();
-        
+            princessAnimateChoose();
         }, 2000);
     });
 }, 1000);

@@ -74,19 +74,38 @@ body
 }
 
 
-#princess
+#Princess
 {
-    height:160px;
-    width:160px;
-
     display: flex;
     position:absolute;
     left:12%;
     top:28%;
+}
+
+#defaultP
+{
+    height:320px;
+    width:240px;
 
     background:url(../images/characters/princessDefault.png);
     background-size:cover;
     background-position: 0 0;
+}
+#toChooseP
+{
+    display:none;
+    height:160px;
+    width:160px;
+
+    background:url(../images/characters/toChoose.png);
+    background-size:cover;
+    background-position: 0 0;
+}
+#boxes
+{
+    display:none;
+    height:320px;
+    width:240px;
 }
 
 #test

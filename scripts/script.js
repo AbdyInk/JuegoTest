@@ -3,6 +3,7 @@ $(document).ready(function () {
   });
 
   let walking;
+  let box=["Default0"];
 
   //Princesa aparicion
   let Princess = new Jugador(25, 10, 10, 20);

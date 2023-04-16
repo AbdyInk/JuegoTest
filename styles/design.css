@@ -84,8 +84,8 @@ body
 
 #defaultP
 {
-    height:320px;
-    width:240px;
+    height:160px;
+    width:160px;
 
     background:url(../images/characters/princessDefault.png);
     background-size:cover;
@@ -103,10 +103,45 @@ body
 }
 #boxes
 {
-    display:none;
+    display:flex;
+    position:absolute;
+
+    left: 9%;
+    top: 20%;
+}
+#box1, #box2, #box3, #box4
+{
+    display:flex;
+    position: absolute;
     height:320px;
     width:240px;
+
 }
+#box4
+{
+    background:url(../images/boxes/attackBox.png);
+    background-size:cover;
+    background-position: 0 0;
+}
+#box1
+{
+    background:url(../images/boxes/invBox.png);
+    background-size:cover;
+    background-position: -1200px 0;
+}
+#box2
+{
+    background:url(../images/boxes/fleeBox.png);
+    background-size:cover;
+    background-position: -2400px 0;
+}
+#box3
+{
+    background:url(../images/boxes/specialBox.png);
+    background-size:cover;
+    background-position: -3600px 0;
+}
+
 
 #test
 {

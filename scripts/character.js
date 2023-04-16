@@ -219,18 +219,18 @@ function princessAnimateChoose()
     }, 100);
     setTimeout(() => {
         pSetAnim3("toChoose");
-    }, 200);
+    }, 150);
     setTimeout(() => {
         pSetAnim4("toChoose");
-    }, 300);
+    }, 200);
     setTimeout(() => {
         pSetAnim5("toChoose");
-    }, 400);
+    }, 250);
     setTimeout(() => {
         pSetAnim6("toChoose");
-    }, 500);
+    }, 300);
     setTimeout(() => {
         pSetAnim7("toChoose");
-        
-    }, 600);
+        boxAppear();
+    }, 400);
 }
